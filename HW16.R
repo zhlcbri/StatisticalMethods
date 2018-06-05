@@ -1,3 +1,13 @@
+# P2
+x_val <- c(1, 1, 2, 3)
+y_val <- c(2, 4, 2, 0)
+df <- data.frame(x, y)
+m <- lm(y_val ~ x_val, data = df) 
+summary(m)
+
+scatter.smooth(x = x_val, y = y_val)
+
+
 # R1
 x <- runif(500, 50, 80)
 y <- c()
